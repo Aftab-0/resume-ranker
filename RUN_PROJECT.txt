@@ -1,0 +1,67 @@
+HOW TO RUN RESUMERANKER PROJECT (LOCAL)
+
+PROJECT STRUCTURE
+- AI-PROJECT
+  - backend
+  - resume-ranker-pro (frontend)
+
+--------------------------------
+STEP 1: OPEN PROJECT
+--------------------------------
+1. Open VS Code
+2. File → Open Folder
+3. Select the AI-PROJECT folder
+
+--------------------------------
+STEP 2: RUN BACKEND (FASTAPI)
+--------------------------------
+1. Open Terminal in VS Code
+2. Go to backend folder:
+   cd backend
+
+3. Activate virtual environment:
+   .venv\Scripts\activate
+
+   (If this works, you will see (.venv) in terminal)
+
+4. Start backend server:
+   uvicorn main:app --reload
+
+5. Backend runs at:
+   http://127.0.0.1:8000
+
+DO NOT CLOSE THIS TERMINAL
+
+--------------------------------
+STEP 3: RUN FRONTEND (REACT)
+--------------------------------
+1. Open a NEW terminal ( + icon in VS Code )
+2. Go to frontend folder:
+   cd resume-ranker-pro
+
+3. Start frontend:
+   npm run dev
+
+4. Frontend runs at:
+   http://localhost:5173
+
+--------------------------------
+STEP 4: USE THE APP
+--------------------------------
+Flow:
+Home → Upload Resume → Job Description → Results
+
+Backend + Frontend must BOTH be running.
+
+--------------------------------
+COMMON ERRORS
+--------------------------------
+- If "fastapi not found":
+  Virtual environment is NOT activated.
+
+- If blank page:
+  Check App.jsx routes and URL path.
+
+--------------------------------
+DONE
+--------------------------------
